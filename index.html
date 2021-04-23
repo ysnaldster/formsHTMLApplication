@@ -23,22 +23,20 @@
                 </ul>
             </nav>
         </header>
+
         <main>   
-            <h1 id="title">Bienvenido al Formulario de Encuesta</h1>
+            <!-- <h1 id="title">Bienvenido al Formulario de Encuesta</h1>
             <p id="description">A continuación encontraras una serie de preguntas en donde tendras que proceder a seleccionar y rellenar</p>  
-            <form action="" id="survey-form">
-                <label for="nombre-label">
-                    <span>Ingresa tu nombre</span>
+            <form action="#"  id="survey-form">
+                <label for="nombre-label">Ingresa tu nombre
                     <input type="text" name="nombre-label" id="nombre-label" placeholder="Ingrese un nombre">
                 </label>
-                <label for="email-label">
-                    <span>Ingresa tu email</span>
+                <label for="email-label">Ingresa tu email
                     <input type="email-label" name="email-label" id="email-label" placeholder="Ingrese un email">
                 </label>
-                <label for="number-label">
-                    <span>Ingresa un numero</span>
+                <label for="number-label">Ingresa un numero
                     <input type="number-label" name="number-label" id="number-label" placeholder="Ingrese un numero">
-                </label>
+                </label> -->
                 <!-- <label for="dropdown-label">
                     <span>Escoge una opcion</span>
                 </label> -->
@@ -51,14 +49,73 @@
                         <option value="otro">Otro</option>
                     </datalist> -->
                 </br>
-                <input list="roles">
+                <!-- <input list="roles">
                 <datalist id="roles">
                         <option value="estudiante">Estudiante</option>
                         <option value="profesor">Profesor</option>
-                </datalist>
-
+                </datalist> -->
+                <!-- <input type="submit" value="Enviar"> -->
             </form>
         </main>
+
+
+        <form action= "#">
+            <label for="name" id="name-label"> Nombre </br> 
+                <input type="text" id="name"> </br>
+            </label> Correo Electrónico </br>
+            <label for="email" id="email-label">
+                <input type="email" id="email" name="email">
+            </label> </br>
+            <label for="number" id="number-label"> Edad </br>
+                <input type = "number" id="number" name="number" min = "18" max = "60">
+            </label> </br>
+            <label for="dropdown"> Escoge un rol <br>
+                <input  list="dropdown">
+            </label>
+            <datalist id="dropdown">
+                <option value="Estudiante"></option>
+                <option value="Docente"></option>
+            </datalist> <br>
+            <label for="hobbie">¿Cual es tu categoria de hobbie? </br>
+                <input type="radio" name="hobbie" value="Deportes"> Deportes </br>
+                <input type="radio" name="hobbie" value="Lectura"> Lectura </br>
+                <input type="radio" name="hobbie" value="Lectura"> Juegos </br>
+            </label> </br>
+            <span>¿Que lenguajes de programación dominas?</span></br>
+            <div>
+                <label for="lenguaje">
+                    <input type= "checkbox" value="Php" id="lenguaje"> PHP
+                </label>
+            </div>
+            <div>
+                <label for="lenguaje">
+                    <input type= "checkbox" value="C++" id="lenguaje"> C++
+                </label>
+            </div>
+            <div>
+                <label for="lenguaje">
+                    <input type= "checkbox" value="JavaScript" id="lenguaje"> JavaScript
+                </label>
+            </div>
+            <div>
+                <label for="lenguaje">
+                    <input type= "checkbox" value="Java" id="lenguaje"> Java
+                </label>
+            </div>
+            <div>
+                <label for="lenguaje">
+                    <input type= "checkbox" value="Python" id="lenguaje"> Python
+                </label>
+            </div> 
+
+            <label for="sugerencias"> Cuentanos tus sugerencias </br>
+                <textarea name="sugerencias" id="sugerencias"></textarea>
+            </label> </br>
+
+            <input type="submit" value="Enviar" id="submit">
+          </form>
+
+
         <footer></footer>
 </body>
 </html>
