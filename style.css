@@ -1,0 +1,71 @@
+/* Selector universal para quitar estilos predeterminados */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    /* Paleta a utilizar */
+    --gray-claro: #aaaaaa;
+    --black-claro: #393e46;
+    --blue-turquesa: #1f6f8b;
+    --beige: #e6d5b8;
+}
+
+/* Valor para usar medida rem */
+html{
+    font-size: 62.5%;
+}
+
+
+header{
+    display: flex;
+}
+
+.principal{
+    flex: 2 0 auto;
+    background-color: var(--gray-claro);
+}
+
+.principal p{
+    display: inline-block;
+    margin: 10px 0px 10px 30px;
+    border: 1px solid var(--black-claro);
+    padding: 5px;
+    color: #ffff;
+    border-radius: 5px;
+    background: var(--black-claro);
+}
+
+.header-nav{
+    flex: 1 0 auto;
+    background-color: var(--gray-claro);
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.menu li{
+   
+    margin: 10px;
+    border: 1px solid var(--black-claro);
+    padding: 5px;
+    border-radius: 5px;
+    background: var(--black-claro);
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
