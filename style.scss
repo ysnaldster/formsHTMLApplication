@@ -1,0 +1,208 @@
+/* Paleta de Colores a utilizar */
+$negro-mate: #393e46;
+$gray-mate: #495464;
+$gray-claro: #9ba4b4;
+$margin-e: 10px;
+$padding-e: 10px;
+$white: #fff;
+
+
+@mixin flexible {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin containersFlexibles {
+    @include flexible();
+    background-color: $negro-mate;
+    padding: 1rem 10rem;
+    border-radius: .5rem;
+    margin: $margin-e 0;
+    text-align: center;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: 'Rubik', sans-serif;
+    font-size: 62.5%;
+}
+
+// Header
+.parent-container{
+    display: flex;
+    .barra-header-title{
+        flex: 2 0 auto;
+        background-color: $negro-mate;
+        p{
+            display: inline-block;
+            margin: $margin-e;
+            text-align: center;
+            border: 1px solid $white;
+            border-radius: 5px;
+            background-color: $gray-mate;
+            padding: $padding-e - 5;
+            color: $white;
+        }
+    }
+    .barra-header{
+        flex: 1 0 auto;
+        background-color: $negro-mate;
+        .barra-header-container{
+            display: flex;
+            justify-content: flex-end;
+            li{
+                margin: $margin-e;
+                list-style: none;
+                border: 1px solid $white;
+                border-radius: 5px;
+                background-color: $gray-mate;
+                padding: $padding-e - 5;
+                a{
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }     
+    }       
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    background-color: $gray-claro;
+    margin: $margin-e ;
+    border-radius: 5px;
+    .title-container{
+        @include flexible();
+        margin: $margin-e;
+        background-color: $negro-mate;
+        padding: $padding-e;
+        border-radius: 10px;
+        h1{
+            color: $white;
+        }
+    }
+    .description-container{
+        @include flexible();
+        margin: $margin-e - 5 $margin-e;
+        background-color: $negro-mate;
+        padding: $padding-e;
+        border-radius: 10px;
+        p{
+            color: $white;
+        }
+    }
+    .formulario{
+        margin: 5% 10%;
+    }
+    .name-container{
+        @include containersFlexibles();
+        #name-label{
+            color: $white;
+        }
+        #name{
+            margin: 5px 10px;
+        }
+    }
+    .email-container{
+        @include containersFlexibles();
+        #email-label{
+            color: $white;
+            
+        }
+        #email{
+            margin: 5px 10px;
+        }
+
+    }
+    .edad-container{
+        @include containersFlexibles();
+        #number-label{
+            color: $white;
+        }
+        #number{
+            margin: 5px 10px;
+        }
+    }
+    .dropdown-container{
+        @include containersFlexibles();
+        #dropdown-label{
+            color: $white;
+        }
+        #drop{
+            margin: 5px 10px;
+        }
+    }
+    .hobbie-container{
+        @include containersFlexibles();
+        flex-direction: column;
+        #hobbie-label{
+            color: $white;   
+        }
+        .hobbie-items {
+            color: $white;
+            input{
+                margin: 5px;
+            }
+        }
+        
+    }
+    .check-lenguajes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        .label-lenguajes{
+            margin: 10px;
+        }
+        ul{
+            list-style: none; 
+        }
+        background-color: $negro-mate;
+        border-radius: .5rem;
+        margin: $margin-e 0;
+        padding: $padding-e;
+    }
+    .sugerencias-container{
+        @include containersFlexibles();
+        color: $white;
+        flex-direction: column;
+        label{
+            margin: $margin-e;
+        }
+    } 
+}
+
+#container-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    input{
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 1rem ;
+        background-color: $gray-mate;
+        color: $white;
+    }
+}
+   
+footer{
+    margin: 10px;
+    background-color: $negro-mate;
+    color: $white;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+

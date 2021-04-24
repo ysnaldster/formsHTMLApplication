@@ -1,121 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Formulario de Encuesta</title>
 </head>
+
 <body>
-        <header>
-            <div class="principal">
-                <p>Formulario de Encuesta</p>
-            </div>
-            <nav class="header-nav">
-                <ul class="menu">
-                    <li>
-                        <a href="#">Sign Up</a>
-                    </li>
-                    <li>
-                        <a href="#">Log In</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <header class="parent-container">
+        <div class="barra-header-title">
+            <p>Formulario de Encuesta</p>
+        </div>
+        <nav class="barra-header">
+            <ul class="barra-header-container">
+                <li>
+                    <a href="#">Sign Up</a>
+                </li>
+                <li>
+                    <a href="#">Log In</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <div class="title-container">
+            <h1 id="title">Bienvenido al Formulario de Encuesta</h1>
+        </div>
+        <div class="description-container">
+            <p id="description">En el siguiente formulario se encuentran las opciones de su preferencia, seleccione la que desee y envie la información para la validación
+            </p>
+        </div>
+        <div class="formulario">
+            <form action="#">
+                <div class="name-container">
+                    <label for="name" id="name-label"> Nombre
+                        <input type="text" id="name" placeholder="Ingrese nombre"> </br>
+                    </label>
+                </div>
+                <div class="email-container">
+                    <label for="email" id="email-label"> Correo Electrónico
+                        <input type="email" id="email" name="email" placeholder="Ingrese correo"> </br>
+                    </label> </br>
+                </div>
+                <div class="edad-container">
+                    <label for="number" id="number-label"> Ingresa tu Edad
+                        <input type="number" id="number" name="number" min="18" max="60" placeholder="Edad"> </br>
+                    </label> </br>
+                </div>
+                <div class="dropdown-container">
+                    <label for="dropdown" id="dropdown-label"> Escoge un rol
+                        <input list="dropdown" id="drop" placeholder="Escoge un rol"> </br>
+                        <datalist id="dropdown">
+                            <option value="Estudiante"></option>
+                            <option value="Docente"></option>
+                        </datalist>
+                    </label> <br>
+                </div>
+                <div class="hobbie-container">
+                    <label for="hobbie" id="hobbie-label">¿Cual es tu categoria de hobbie? 
+                    </label> <br>
+                    <div class="hobbie-items" name = "hobbies">
+                        <input type="radio" name="hobbie" id="Deportes">Deportes
+                        <input type="radio" name="hobbie" id="Lectura">Lectura
+                        <input type="radio" name="hobbie" id="Juegos">Juegos
+                        <input type="radio" name="hobbie" id="Cocina">Cocina
+                    </div>
+                </div>
+              
+                <div class="check-lenguajes">
+                    <label class="label-lenguajes">¿Que lenguajes de programación dominas?</label>
+                    <ul>
 
-        <main>   
-            <!-- <h1 id="title">Bienvenido al Formulario de Encuesta</h1>
-            <p id="description">A continuación encontraras una serie de preguntas en donde tendras que proceder a seleccionar y rellenar</p>  
-            <form action="#"  id="survey-form">
-                <label for="nombre-label">Ingresa tu nombre
-                    <input type="text" name="nombre-label" id="nombre-label" placeholder="Ingrese un nombre">
-                </label>
-                <label for="email-label">Ingresa tu email
-                    <input type="email-label" name="email-label" id="email-label" placeholder="Ingrese un email">
-                </label>
-                <label for="number-label">Ingresa un numero
-                    <input type="number-label" name="number-label" id="number-label" placeholder="Ingrese un numero">
-                </label> -->
-                <!-- <label for="dropdown-label">
-                    <span>Escoge una opcion</span>
-                </label> -->
-                <!-- <input list="rol" name="dropdown-label" id="dropdown-label" placeholder="Selecciona un rol">
-                    <datalist id="dropdown-label">
-                        <option value="estudiante">Estudiante</option>
-                        <option value="tiempo_full_trabajo">Trabajo tiempo completo</option>
-                        <option value="tiempo_full_estudio">Estudio tiempo completo</option>
-                        <option value="prefiero_no_decir">Prefiero no decir</option>
-                        <option value="otro">Otro</option>
-                    </datalist> -->
-                </br>
-                <!-- <input list="roles">
-                <datalist id="roles">
-                        <option value="estudiante">Estudiante</option>
-                        <option value="profesor">Profesor</option>
-                </datalist> -->
-                <!-- <input type="submit" value="Enviar"> -->
+                        <div id="checkboxes">
+                            <li>
+                                <input type="checkbox" name="lenguajes" value="Php"> <label for="lenguajes">PHP</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="lenguajes" value="C++"> <label for="lenguajes">C++</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="lenguajes" value="JavaScript"> <label
+                                    for="lenguajes">JavaScript</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="lenguajes" value="Java"> <label
+                                    for="lenguajes">Java</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="lenguajes" value="Python"> <label
+                                    for="lenguajes">Python</label>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="sugerencias-container">
+                    <label for="sugerencias" > ¡ Cuentanos tus sugerencias !
+                    </label>
+                    <div id="sugerencias">
+                        <textarea name="sugerencias" id="sugerencias" cols="25" rows="5" placeholder="Escribe tus sugerencias"></textarea>
+                    </div>
+                </div>
+                <div id="container-boton">
+                    <input type="submit" value="Enviar" id="submit">
+                </div>
             </form>
-        </main>
-
-
-        <form action= "#">
-            <label for="name" id="name-label"> Nombre </br> 
-                <input type="text" id="name"> </br>
-            </label> Correo Electrónico </br>
-            <label for="email" id="email-label">
-                <input type="email" id="email" name="email">
-            </label> </br>
-            <label for="number" id="number-label"> Edad </br>
-                <input type = "number" id="number" name="number" min = "18" max = "60">
-            </label> </br>
-            <label for="dropdown"> Escoge un rol <br>
-                <input  list="dropdown">
-            </label>
-            <datalist id="dropdown">
-                <option value="Estudiante"></option>
-                <option value="Docente"></option>
-            </datalist> <br>
-            <label for="hobbie">¿Cual es tu categoria de hobbie? </br>
-                <input type="radio" name="hobbie" value="Deportes"> Deportes </br>
-                <input type="radio" name="hobbie" value="Lectura"> Lectura </br>
-                <input type="radio" name="hobbie" value="Lectura"> Juegos </br>
-            </label> </br>
-            <span>¿Que lenguajes de programación dominas?</span></br>
-            <div>
-                <label for="lenguaje">
-                    <input type= "checkbox" value="Php" id="lenguaje"> PHP
-                </label>
-            </div>
-            <div>
-                <label for="lenguaje">
-                    <input type= "checkbox" value="C++" id="lenguaje"> C++
-                </label>
-            </div>
-            <div>
-                <label for="lenguaje">
-                    <input type= "checkbox" value="JavaScript" id="lenguaje"> JavaScript
-                </label>
-            </div>
-            <div>
-                <label for="lenguaje">
-                    <input type= "checkbox" value="Java" id="lenguaje"> Java
-                </label>
-            </div>
-            <div>
-                <label for="lenguaje">
-                    <input type= "checkbox" value="Python" id="lenguaje"> Python
-                </label>
-            </div> 
-
-            <label for="sugerencias"> Cuentanos tus sugerencias </br>
-                <textarea name="sugerencias" id="sugerencias"></textarea>
-            </label> </br>
-
-            <input type="submit" value="Enviar" id="submit">
-          </form>
-
-
-        <footer></footer>
+        </div>
+    </main>
+  
+    <footer>
+        <p>
+            <strong>Desarrollado por Ysnaldo J. López H. </strong>
+        </p>
+    </footer>
 </body>
+
 </html>
