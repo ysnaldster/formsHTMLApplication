@@ -23,6 +23,7 @@ $white: #fff;
 }
 
 
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -37,6 +38,7 @@ html{
 // Header
 .parent-container{
     display: flex;
+    font-size: 2rem;
     .barra-header-title{
         flex: 2 0 auto;
         background-color: $negro-mate;
@@ -79,6 +81,7 @@ html{
     background-color: $gray-claro;
     margin: $margin-e ;
     border-radius: 5px;
+    font-size: 2rem;
     .title-container{
         @include flexible();
         margin: $margin-e;
@@ -87,6 +90,7 @@ html{
         border-radius: 10px;
         h1{
             color: $white;
+            text-align: center;
         }
     }
     .description-container{
@@ -97,6 +101,7 @@ html{
         border-radius: 10px;
         p{
             color: $white;
+            text-align: center;
         }
     }
     .formulario{
@@ -144,7 +149,8 @@ html{
         @include containersFlexibles();
         flex-direction: column;
         #hobbie-label{
-            color: $white;   
+            color: $white;
+            
         }
         .hobbie-items {
             color: $white;
@@ -189,7 +195,7 @@ html{
         border: 1px solid #000;
         border-radius: 5px;
         padding: 10px;
-        font-size: 1rem ;
+        font-size: 2rem ;
         background-color: $gray-mate;
         color: $white;
     }
@@ -202,7 +208,7 @@ footer{
     border-radius: 5px;
     padding: 15px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 
