@@ -18,7 +18,8 @@
                 <img src="./imagenes/gorro.png" alt="Imagen gorro de graduación" width="150px" height="150px">
             </figure>
             <h1 id="title">Bienvenido a BecasGeek</h1>
-            <p id="description">Somos una academia dedicada a la formación de jovenes en el área de la programacion, a continuación
+            <p id="description">Somos una academia dedicada a la formación de jovenes en el área de la programacion, a
+                continuación
                 apreciaras una sección de interrogantes para responder, con el fin de adquirir tus datos para el proceso
                 técnico.
             </p>
@@ -31,7 +32,7 @@
         </div>
     </section>
     <main class="main-container">
-        <form action="#" id="survey-form">
+        <form action="validacion.html" method="GET" id="survey-form">
             <ul class="elements-form">
                 <li>
                     <label for="name" id="name-label">Ingresa tu nombre<br>
@@ -61,59 +62,73 @@
                 </li>
                 <br>
                 <li>
-                    <label for="hobbie" id="hobbie-label">Escoge un Hobbie
-                        <ul>
-                            <li>
-                                <input type="radio" name="hobbie" id="Deportes">Deportes
-                            </li>
-                            <li>
-                                <input type="radio" name="hobbie" id="Lectura">Lectura
-                            </li>
-                            <li>
-                                <input type="radio" name="hobbie" id="Juegos">Juegos
-                            </li>
-                            <li>
-                                <input type="radio" name="hobbie" id="Cocina">Cocina
-                            </li>
-                        </ul>
+                    <label for="hobbie" id="hobbie-label">Escoge un Hobbie </label>
+                <li>
+                <br>
+                    <label for="Deportes">
+                        <input type="radio" name="hobbie" id="Deportes" value="deportes">Deportes
                     </label>
+                </li>
+                <li>
+                    <label for="Lectura">
+                        <input type="radio" name="hobbie" id="Lectura" value="lectura">Lectura
+                    </label>
+                </li>
+                <li>
+                    <label for="Juegos">
+                        <input type="radio" name="hobbie" id="Juegos" value="juegos">Juegos
+                    </label>
+
+                </li>
+                <li>
+                    <label for="Cocina">
+                        <input type="radio" name="hobbie" id="Cocina" value="cocina">Cocina
+                    </label>
+                </li>
                 </li>
                 <br>
                 <li>
                     <label class="label-lenguajes" for="checkboxes">¿Cual es tu lenguaje?
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="lenguajes" value="Php"> <label for="lenguajes">PHP</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="lenguajes" value="C++"> <label for="lenguajes">C++</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="lenguajes" value="JavaScript"> <label
-                                    for="lenguajes">JavaScript</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="lenguajes" value="Java"> <label
-                                    for="lenguajes">Java</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="lenguajes" value="Python"> <label
-                                    for="lenguajes">Python</label>
-                            </li>
-                        </ul>
-                        <div id="checkboxes">
-                        </div>
                     </label>
+                <li>
+                <br>
+                    <label for="php">
+                        <input type="checkbox" name="lenguajes" value="Php" id="php"> PHP
+                    </label>
+                </li>
+                <li>
+                    <label for="c++">
+                        <input type="checkbox" name="lenguajes" value="C++" id="c++"> C++
+                    </label>
+                </li>
+                <li>
+                    <label for="js">
+                        <input type="checkbox" name="lenguajes" value="JavaScript" id="js"> JavaScript
+                    </label>
+                </li>
+                <li>
+                    <label for="java">
+                        <input type="checkbox" name="lenguajes" value="Java" id="java"> Java
+                    </label>
+                </li>
+                <li>
+                    <label for="python">
+                        <input type="checkbox" name="lenguajes" value="Python" id="python"> Python
+                    </label>
+                </li>
                 </li>
                 <br>
                 <li>
                     <label for="sugerencias" class="coments"> Sugerencias
-                        <div id="sugerencias">
-                            <textarea name="sugerencias" id="sugerencias" cols="20" rows="0"
-                                placeholder="Escribe tus sugerencias"></textarea>
-                        </div>
                     </label>
                 </li>
+                <br>
+                <li>
+                    <textarea name="sugerencias" id="sugerencias" cols="20" rows="5"
+                        placeholder="Escribe tus sugerencias"></textarea>
+
+                </li>
+                <br>
                 <li>
                     <div id="container-boton">
                         <input type="submit" value="Enviar" id="submit">
@@ -128,4 +143,5 @@
         </div>
     </footer>
 </body>
+
 </html>

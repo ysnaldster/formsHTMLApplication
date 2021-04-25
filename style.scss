@@ -120,9 +120,6 @@ body{
             }
             #hobbie-label{
                 font-weight: bold;
-                ul{
-                   @include inline();
-                }
             }
             .label-lenguajes{
                font-weight: bold;
@@ -133,12 +130,8 @@ body{
             }
             .coments{
                 font-weight: bold;
-                #sugerencias{
-                    margin: 10px 0px;
-                    border-radius: 10px;
-                    padding: 5px;
-                }
             }
+
             #container-boton{
                 @include flexible();
                 #submit{
@@ -148,6 +141,7 @@ body{
                     background-color: #495464;
                     color: #eeeeee;
                     font-size: 15px;
+                    
                 }
             }
 

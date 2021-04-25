@@ -1,0 +1,15 @@
+html{
+    font-family: 'Ubuntu', sans-serif;
+}
+.div-container{
+    width: 100%;
+}
+.div-item{
+    width: 50%;
+    background-color: #000;
+    margin: 100px auto;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
