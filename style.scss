@@ -85,7 +85,7 @@ body{
 .main-container{
     @include flexible();
     width: 100%;
-    #form-container{
+    #survey-form{
         width: 50%;
         min-width: 318px;
         background-color: $color-claro;

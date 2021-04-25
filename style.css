@@ -89,7 +89,7 @@ body {
   width: 100%;
 }
 
-.main-container #form-container {
+.main-container #survey-form {
   width: 50%;
   min-width: 318px;
   background-color: #eeeeee;
@@ -105,83 +105,83 @@ body {
   border-bottom-right-radius: 10px;
 }
 
-.main-container #form-container ul {
+.main-container #survey-form ul {
   list-style: none;
 }
 
-.main-container #form-container ul #name-label {
+.main-container #survey-form ul #name-label {
   font-weight: bold;
 }
 
-.main-container #form-container ul #name-label #name {
+.main-container #survey-form ul #name-label #name {
   margin: 10px auto;
   padding: 5px;
   border-radius: 5px;
   width: 200px;
 }
 
-.main-container #form-container ul #email-label {
+.main-container #survey-form ul #email-label {
   font-weight: bold;
 }
 
-.main-container #form-container ul #email-label #email {
+.main-container #survey-form ul #email-label #email {
   margin: 10px auto;
   padding: 5px;
   border-radius: 5px;
   width: 200px;
 }
 
-.main-container #form-container ul #number-label {
+.main-container #survey-form ul #number-label {
   font-weight: bold;
 }
 
-.main-container #form-container ul #number-label #number {
+.main-container #survey-form ul #number-label #number {
   margin: 10px auto;
   padding: 5px;
   border-radius: 5px;
   width: 200px;
 }
 
-.main-container #form-container ul #dropdown-label {
+.main-container #survey-form ul #dropdown-label {
   font-weight: bold;
 }
 
-.main-container #form-container ul #dropdown-label #drop {
+.main-container #survey-form ul #dropdown-label #drop {
   margin: 10px auto;
   padding: 5px;
   border-radius: 5px;
   width: 200px;
 }
 
-.main-container #form-container ul #hobbie-label {
+.main-container #survey-form ul #hobbie-label {
   font-weight: bold;
 }
 
-.main-container #form-container ul #hobbie-label ul {
+.main-container #survey-form ul #hobbie-label ul {
   display: inline;
   font-weight: normal;
 }
 
-.main-container #form-container ul .label-lenguajes {
+.main-container #survey-form ul .label-lenguajes {
   font-weight: bold;
 }
 
-.main-container #form-container ul .label-lenguajes ul {
+.main-container #survey-form ul .label-lenguajes ul {
   display: inline;
   font-weight: normal;
 }
 
-.main-container #form-container ul .coments {
+.main-container #survey-form ul .coments {
   font-weight: bold;
 }
 
-.main-container #form-container ul .coments #sugerencias {
+.main-container #survey-form ul .coments #sugerencias {
   margin: 10px 0px;
   border-radius: 10px;
   padding: 5px;
 }
 
-.main-container #form-container ul #container-boton {
+.main-container #survey-form ul #container-boton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,7 +192,7 @@ body {
       align-content: center;
 }
 
-.main-container #form-container ul #container-boton #submit {
+.main-container #survey-form ul #container-boton #submit {
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 10px;
