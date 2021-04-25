@@ -6,55 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Arimo&family=Coda+Caption:wght@800&family=PT+Sans:wght@700&family=Poppins:ital,wght@0,200;1,100&family=Rubik:ital@1&family=Ubuntu:wght@500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Formulario de Encuesta</title>
 </head>
 
 <body>
-    <main class="main-container">
-
+    <section class="titulos">
         <div class="div-container">
-            <h1>Bienvenido a BecasGeek</h1>
+            <figure class="img-container-gorro">
+                <img src="./imagenes/gorro.png" alt="Imagen gorro de graduación" width="150px" height="150px">
+            </figure>
+            <h1 id="title">Bienvenido a BecasGeek</h1>
             <p>Somos una academia dedicada a la formación de jovenes en el área de la programacion, a continuación
-                apreciaras una sección de interrogantes para responder, con el fin de adquirir tus datos
-                para el proceso técnico.
+                apreciaras una sección de interrogantes para responder, con el fin de adquirir tus datos para el proceso
+                técnico.
+            </p>
+            <figure class="img-container">
+                <img src="./imagenes/student-center.jpg" alt="Imagen de centro geek">
+            </figure>
+            <p class="img-description">
+                Academia Geek - Sede Bogota D.C
             </p>
         </div>
+    </section>
+    <main class="main-container">
         <form action="#" id="form-container">
             <ul class="elements-form">
                 <li>
-                    <label for="name" id="name-label"> <strong>Nombre</strong>
-                        <input type="text" id="name" placeholder="Ingrese nombre">
+                    <label for="name" id="name-label">Ingresa tu nombre<br>
+                        <input type="text" id="name" placeholder="Ingresa su nombre" required>
                     </label>
                 </li>
                 <li>
-                    <label for="email" id="email-label"> <strong>Correo Electrónico</strong>
-                        <input type="email" id="email" name="email" placeholder="Ingrese correo">
+                    <label for="email" id="email-label"> <strong>Correo Electrónico</strong> <br>
+                        <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico"
+                            required>
                     </label>
                 </li>
                 <li>
-                    <label for="number" id="number-label"> <strong>Ingresa tu Edad</strong>
-                        <input type="number" id="number" name="number" min="18" max="60" placeholder="Edad">
+                    <label for="number" id="number-label"> <strong>Ingrese su Edad</strong> <br>
+                        <input type="number" id="number" name="number" min="18" max="60" placeholder="Ingrese su edad"
+                            required>
                     </label>
                 </li>
                 <li>
-                    <label for="dropdown" id="dropdown-label"> <strong>Escoge un rol</strong>
-                        <input list="dropdown" id="drop" placeholder="Escoge un rol">
+                    <label for="dropdown" id="dropdown-label"> <strong>Que rol desempeñas</strong> <br>
+                        <input list="dropdown" id="drop" placeholder="Escoge un rol" required>
                         <datalist id="dropdown">
                             <option value="Estudiante"></option>
                             <option value="Docente"></option>
                         </datalist>
                     </label>
                 </li>
+                <br>
                 <li>
-                    <label for="hobbie" id="hobbie-label"><strong>¿Cual es tu categoria de hobbie?</strong>
-                    </label>
-                    <div class="hobbie-items" name="hobbies">
+                    <label for="hobbie" id="hobbie-label">Escoge un Hobbie
                         <ul>
                             <li>
                                 <input type="radio" name="hobbie" id="Deportes">Deportes
@@ -68,14 +75,13 @@
                             <li>
                                 <input type="radio" name="hobbie" id="Cocina">Cocina
                             </li>
-                        </ul>  
-                    </div>
+                        </ul>
+                    </label>
                 </li>
+                <br>
                 <li>
-                    <label class="label-lenguajes"><strong>¿Que lenguajes de programación dominas?</strong></label>
-                    <ul>
-
-                        <div id="checkboxes">
+                    <label class="label-lenguajes" for="checkboxes">¿Cual es tu lenguaje?
+                        <ul>
                             <li>
                                 <input type="checkbox" name="lenguajes" value="Php"> <label for="lenguajes">PHP</label>
                             </li>
@@ -94,16 +100,19 @@
                                 <input type="checkbox" name="lenguajes" value="Python"> <label
                                     for="lenguajes">Python</label>
                             </li>
+                        </ul>
+                        <div id="checkboxes">
                         </div>
-                    </ul>
-                </li>
-                <li >
-                    <label for="sugerencias" class="coments"> <strong>Cuentanos tus sugerencias</strong>
                     </label>
-                    <div id="sugerencias">
-                        <textarea name="sugerencias" id="sugerencias" cols="25" rows="5"
-                            placeholder="Escribe tus sugerencias"></textarea>
-                    </div>
+                </li>
+                <br>
+                <li>
+                    <label for="sugerencias" class="coments"> Sugerencias
+                        <div id="sugerencias">
+                            <textarea name="sugerencias" id="sugerencias" cols="20" rows="0"
+                                placeholder="Escribe tus sugerencias"></textarea>
+                        </div>
+                    </label>
                 </li>
                 <li>
                     <div id="container-boton">
@@ -113,12 +122,10 @@
             </ul>
         </form>
     </main>
-
-    <footer>
-        <p>
-            Desarrollado por Ysnaldo J. Lopez H.
-        </p>
+    <footer class="footer-container">
+        <div class="footer-item">
+            Desarrollado por Ysnaldo J. López H.
+        </div>
     </footer>
 </body>
-
 </html>
